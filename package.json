@@ -1,0 +1,24 @@
+{
+  "name": "Develop",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirandagrace-dev/hw11.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mirandagrace-dev/hw11/issues"
+  },
+  "homepage": "https://github.com/mirandagrace-dev/hw11#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
