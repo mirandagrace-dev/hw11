@@ -25,6 +25,15 @@ app.get("/notes", (req, res) => {
 	res.sendFile(path.join(__dirname, "/public/notes.html"));
 });
 
+//return all saved notes
+app.get("/api/notes", function (req, res) {
+	fs.readFile("./db/db.json", function (err, data) {
+		if (err) throw err;
+		res.writeHead(200, { "Content-Type": "application/json" });
+		res.end(data);
+	});
+});
+
 //add a note
 app.post("/api/notes", function (req, res) {
 	const newNote = req.body;
@@ -50,4 +59,3 @@ app.post("/api/notes", function (req, res) {
 app.listen(PORT, () => {
 	console.log(`Server is running on http://localhost:${PORT}`);
 });
-
