@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mirandagrace-dev/hw11#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuidv4": "^6.2.6"
   }
 }
